@@ -1,0 +1,83 @@
+.event-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.event-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.event-card-image {
+  width: 55%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.event-card-info {
+  position: absolute;
+  background: #B8963E;
+  padding: 30px;
+  color: #ffffff;
+  z-index: 2;
+  min-width: 280px;
+  max-width: 340px;
+}
+
+/* Normal: info on right, overlapping the image */
+.event-card:not(.reverse) .event-card-info {
+  right: 0;
+  transform: translateX(20%);
+}
+
+/* Reverse: info on left, overlapping the image */
+.event-card.reverse .event-card-info {
+  left: 0;
+  transform: translateX(-20%);
+}
+
+.event-card-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.event-card-info .event-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 18px;
+}
+
+.event-card-info a {
+  color: #ffffff;
+  font-size: 0.95rem;
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.event-card-info a:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .event-card,
+  .event-card.reverse {
+    flex-direction: column;
+    position: static;
+  }
+  .event-card-image {
+    width: 100%;
+    height: 220px;
+  }
+  .event-card-info {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+  }
+}

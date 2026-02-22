@@ -1,0 +1,158 @@
+.contact-form-section {
+  padding: 60px 20px;
+  background: #ffffff;
+}
+
+.contact-form-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  min-height: 480px;
+}
+
+/* Left side */
+.contact-form-left {
+  position: relative;
+  background-image: url('https://placehold.co/600x480/8B7355/FFFFFF?text=');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 40px;
+  color: #ffffff;
+}
+
+.contact-form-left::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.contact-form-left > * {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-form-left h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.contact-form-left p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.contact-phone-card {
+  background: #ffffff;
+  color: #333333;
+  padding: 14px 20px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  max-width: fit-content;
+}
+
+.contact-phone-card .phone-icon {
+  font-size: 1.2rem;
+}
+
+/* Right side */
+.contact-form-right {
+  padding: 50px 40px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-form-right h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #B8963E;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #333333;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #9A7A2F;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form-submit {
+  background: #B8963E;
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+
+.contact-form-submit:hover {
+  background: #9A7A2F;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-form-left {
+    min-height: 280px;
+    padding: 40px 25px;
+  }
+  .contact-form-right {
+    padding: 35px 25px;
+  }
+  .contact-form-row {
+    grid-template-columns: 1fr;
+  }
+}

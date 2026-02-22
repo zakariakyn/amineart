@@ -1,0 +1,20 @@
+.testimonial-card {
+  background: #B8963E;
+  border-radius: 6px;
+  padding: 25px;
+  color: #ffffff;
+}
+
+.testimonial-card-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.testimonial-card-message {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.92;
+}

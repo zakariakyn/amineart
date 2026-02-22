@@ -1,0 +1,122 @@
+/* ======= HOME PAGE ======= */
+
+/* Hero Carousel */
+.home-hero {
+  position: relative;
+}
+
+/* Événements section */
+.home-evenements {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #333333;
+  margin-bottom: 40px;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Services section */
+.home-services {
+  padding: 60px 20px;
+  background: #f9f4eb;
+}
+
+.home-services-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-grid-border {
+  border: 1px solid #B8963E;
+  padding: 30px;
+}
+
+.services-top-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.services-bottom-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+/* Testimonials preview */
+.home-testimonials {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.testimonials-more {
+  text-align: center;
+}
+
+.btn-outline-gold {
+  border: 2px solid #B8963E;
+  color: #B8963E;
+  background: transparent;
+  padding: 10px 28px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline-gold:hover {
+  background: #B8963E;
+  color: #ffffff;
+}
+
+/* Contact section */
+.home-contact {
+  padding: 60px 20px;
+  background: #f9f4eb;
+}
+
+.home-contact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-contact-inner h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .services-top-row {
+    grid-template-columns: 1fr;
+  }
+  .services-bottom-row {
+    max-width: 100%;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
