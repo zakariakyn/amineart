@@ -19,7 +19,7 @@ function Mariage() {
       <HeroBanner title="Mariage" />
       <div className="event-page-content">
         <h2>Mariage</h2>
-        <p>Soiree text — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amine Art Events crée des mariages de rêve avec une attention particulière aux détails. De la décoration florale aux arrangements musicaux, nous nous occupons de tout pour que votre journée soit parfaite.</p>
+        <p>Mariage text — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amine Art Events crée des mariages de rêve avec une attention particulière aux détails. De la décoration florale aux arrangements musicaux, nous nous occupons de tout pour que votre journée soit parfaite.</p>
         <img
           src="https://placehold.co/1200x420/6B5335/FFFFFF?text=Mariage+Event"
           alt="Mariage"
