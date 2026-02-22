@@ -1,0 +1,16 @@
+.contact-page {
+  padding-bottom: 0;
+}
+
+.contact-page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.contact-page-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 30px;
+}

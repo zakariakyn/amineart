@@ -1,0 +1,28 @@
+.testimonials-page {
+  padding-bottom: 60px;
+}
+
+.testimonials-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.testimonials-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 35px;
+}
+
+.testimonials-full-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .testimonials-full-grid {
+    grid-template-columns: 1fr;
+  }
+}

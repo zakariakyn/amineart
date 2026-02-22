@@ -1,0 +1,117 @@
+.service-detail-page {
+  padding-bottom: 60px;
+}
+
+/* Staggered content blocks */
+.service-blocks {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.service-block {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+}
+
+.service-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-block-img {
+  width: 50%;
+  min-height: 300px;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+.service-block-text {
+  background: #B8963E;
+  color: #ffffff;
+  padding: 40px 35px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin-left: -40px;
+}
+
+.service-block.reverse .service-block-text {
+  margin-left: 0;
+  margin-right: -40px;
+}
+
+.service-block-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.service-block-text p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.92;
+}
+
+/* Gallery section */
+.service-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 50px;
+}
+
+.service-gallery h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+/* Grid gallery (structure) */
+.service-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.service-gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .service-block,
+  .service-block.reverse {
+    flex-direction: column;
+  }
+  .service-block-img {
+    width: 100%;
+    min-height: 220px;
+  }
+  .service-block-text {
+    margin-left: 0;
+  }
+  .service-block.reverse .service-block-text {
+    margin-right: 0;
+  }
+  .service-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .service-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
