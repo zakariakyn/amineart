@@ -17,7 +17,7 @@ function Soiree() {
     <div className="soiree-page">
       <HeroBanner title="Soirée" />
       <div className="event-page-content">
-        <h2>Soiree</h2>
+        <h2>Soirée</h2>
         <p>Soiree text — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amine Art Events organise des soirées mémorables avec un décor élégant, une ambiance festive et un service impeccable. Chaque soirée est une expérience unique conçue pour vous et vos invités.</p>
         <img
           src="https://placehold.co/1200x420/8B7355/FFFFFF?text=Soiree+Event"
@@ -25,7 +25,7 @@ function Soiree() {
           className="event-main-image"
         />
         <div className="partners-section">
-          <h3>textOur Golden Partners</h3>
+          <h3>Nos Partenaires d'Or</h3>
           <ImageCarousel slides={partnerSlides} type="partners" />
         </div>
       </div>

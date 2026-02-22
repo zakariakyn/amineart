@@ -26,7 +26,7 @@ function Footer() {
           <span className="separator"> | </span>
           <Link to="/services/eclairage">Services</Link>
           <span className="separator"> | </span>
-          <Link to="/temoignages">Témoignage</Link>
+          <Link to="/temoignages">Témoignages</Link>
           <span className="separator"> | </span>
           <Link to="/contactez-nous">Contactez-nous</Link>
         </nav>

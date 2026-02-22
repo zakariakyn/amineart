@@ -26,7 +26,7 @@ function Mariage() {
           className="event-main-image"
         />
         <div className="partners-section">
-          <h3>textOur Golden Partners</h3>
+          <h3>Nos Partenaires d'Or</h3>
           <ImageCarousel slides={partnerSlides} type="partners" />
         </div>
       </div>

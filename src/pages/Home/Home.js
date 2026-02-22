@@ -50,7 +50,7 @@ function Home() {
         <div className="events-list">
           <EventCard
             title="Soirée"
-            subtitle="harmonious Park"
+            subtitle="Harmonious Park"
             imageSrc="https://placehold.co/800x320/8B7355/FFFFFF?text=Soiree"
             linkTo="/evenements/soiree"
             reverse={false}
